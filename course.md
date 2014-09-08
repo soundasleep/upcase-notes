@@ -1,4 +1,4 @@
-# Intro to Ruby
+# Intro to Rails
 
 ## Week 1
 
