@@ -7,7 +7,7 @@
 * ApplicationController#before_filter
 * routes.rb: `resource` vs `resources`, when to use [:only] verbs
 * `<%= render @object %>`
-* `div_for object` for <div> styling
+* `div_for object` for `<div>` styling
 * `time_ago_in_words`
 * `default_scope` for default sorting models DESC
 * Model validation with Model#validates(presence: true)
