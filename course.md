@@ -10,8 +10,13 @@
 * rand(n)
 * blocks: 5.times do, break
 
-Extension: What if you entered in an empty input, or an input outside of 1..10?
-Question: How do you quickly indent blocks in your favourite text editor?
+### Extensions
+
+* What if you entered in an empty input, or an input outside of 1..10?
+
+### Questions
+
+* How do you quickly indent blocks in your favourite text editor?
 
 ## Week 1.1
 
@@ -38,15 +43,20 @@ Question: How do you quickly indent blocks in your favourite text editor?
 * Inheritance
 * Modules as namespaces, ModuleName::Class
 
-Extension: Look at array destructuring `a, b = [1, 2]`
-Extension: Why are number/symbol accesses to a Hash faster than using a String in Ruby?
-Question: Difference between hash("string" => ...) and hash(:string => ...)?
-Question: What does a 'key' mean in a Hash?
-Question: Why does `puts "#{array}"` print differently from `puts array`?
-Question: What is the difference between an Object and a Hash?
-Question: Why does irb show different results from puts for an object?
-Question: What are vaild Ruby method names?
-Question: How do you comment out a block in your favourite IDE?
+### Extensions
+
+* Look at array destructuring `a, b = [1, 2]`
+* Why are number/symbol accesses to a Hash faster than using a String in Ruby?
+
+### Questions
+
+* Difference between hash("string" => ...) and hash(:string => ...)?
+* What does a 'key' mean in a Hash?
+* Why does `puts "#{array}"` print differently from `puts array`?
+* What is the difference between an Object and a Hash?
+* Why does irb show different results from puts for an object?
+* What are vaild Ruby method names?
+* How do you comment out a block in your favourite IDE?
 
 May need some extra Ruby training for effective understanding of the language, e.g. the courses very quickly goes over scopes, variables, classes, types, symbols, methods, return values, implicit return, getter/setter methods, method ownership, class inheritance, modules/namespaces
 
@@ -73,16 +83,20 @@ Maybe have a break after 57 minutes.
 * `reload!` in `rails console`
 * Routes with `get`, `post`, `put` (`patch` in Rails 4)
 
-Extension: You should consider initialising a Git repository immediately after `rails create` so you can track your changes.
-Extension: Consider adding .editorconfig immediately to your Rails project
-Extension: Look at how to create tables with `rails generate` directly rather than editing migration files
-Extension: Do not try to create all database columns immediately, but only when necessary
-Question: What is "precompilation" in terms of Rails?
-Question: When would you put something in vendor/assets/javascripts?
-Question: Why does state not persist across web requests?
+### Extensions
 
-Is it OK to be using Rails 4.1.5 rather than 3.2.11?
-* You will need to mark params as required: http://stackoverflow.com/questions/17335329/activemodelforbiddenattributeserror-when-creating-new-user
+* You should consider initialising a Git repository immediately after `rails create` so you can track your changes.
+* Consider adding .editorconfig immediately to your Rails project
+* Look at how to create tables with `rails generate` directly rather than editing migration files
+* Do not try to create all database columns immediately, but only when necessary
+
+### Questions
+
+* What is "precompilation" in terms of Rails?
+* When would you put something in vendor/assets/javascripts?
+* Why does state not persist across web requests?
+
+Is it OK to be using Rails 4.1.5 rather than 3.2.11? You will need to mark params as required: http://stackoverflow.com/questions/17335329/activemodelforbiddenattributeserror-when-creating-new-user
 
 It might be helpful to have some diagrams to show how the web browser/controller/view/models etc work together, rather than just talking.
 

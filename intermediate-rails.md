@@ -14,10 +14,15 @@
 * `object.save` returns true or false based on validation
 * Flash variables accessible in application layout
 
-Question: Does your favourite IDE support automatic intending?
-Question: Is there an inline `div_for`?
+### Questions
+
+* Does your favourite IDE support automatic intending?
+* Is there an inline `div_for`?
+
+### Rails 4
 
 Using Rails 4 is going to be quite complicated without experience. Rails --without doesn't work in 4.
+
 * Don't use strong_parameters gem
 * Add the `monban-generators` gem in Rails 4
 * However the talk does mention which parts can be ignored in Rails 4 apps
@@ -42,8 +47,12 @@ Very quickly goes over flash variables with zero discussion.
 * get, post children routes
 * `has_many :assocations, through: :other, class_name: 'NotAssociation'`
 
-Question: Why [content_id, content_type] and not [text_id = nil, photo_id = nil]? When would one be better than the other?
-Question: Are there better column names than follower_id and followed_user_id?
+### Questions
+
+* Why [content_id, content_type] and not [text_id = nil, photo_id = nil]? When would one be better than the other?
+* I Are there better column names than follower_id and followed_user_id?
+
+### Notes
 
 Probably need more discussion on database inheritance approaches, on composite indexes, on association tables
 
@@ -60,15 +69,19 @@ Don't use Windows!
 * Model.where(id: [1, 2, 3]) -> WHERE id IN ...
 * Concerns through `include ConcernName...` in app/models/concerns/concern_name.rb
 
-Question: When do Ruby query caches apply? Can you have stale data?
-Question: When would using your own cheap cache be a bad idea? What if you wanted to invalidate the cache?
-Question: Why would moving Following to a Concern be a bad idea? (We only use the concern once!)
+### Questions
 
-A bit of premature optimisation, but that's OK.
-I don't agree with creating a "Dashboard" object yet, since the Dashboard object doesn't have anything unique other than collations...
-I DON'T agree with following hipster design patterns based on what cool people are saying in Internet videos. Concepts such as "single responsibility" and "open close" is fine but you need to have the experience of when to use/not use it and why. c.f. GoF book. I would suggest rather having a good study on design patterns based on the GoF book rather than following a random video.
-Not sure why we have a Timeline object, we could have just had it in Dashboard.timeline
-"Hard to paginate" but we haven't talked about pagination yet
+* When do Ruby query caches apply? Can you have stale data?
+* When would using your own cheap cache be a bad idea? What if you wanted to invalidate the cache?
+* Why would moving Following to a Concern be a bad idea? (We only use the concern once!)
+
+### Notes
+
+* A bit of premature optimisation, but that's OK.
+* I don't agree with creating a "Dashboard" object yet, since the Dashboard object doesn't have anything unique other than collations...
+* I DON'T agree with following hipster design patterns based on what cool people are saying in Internet videos. Concepts such as "single responsibility" and "open close" is fine but you need to have the experience of when to use/not use it and why. c.f. GoF book. I would suggest rather having a good study on design patterns based on the GoF book rather than following a random video.
+* Not sure why we have a Timeline object, we could have just had it in Dashboard.timeline
+* "Hard to paginate" but we haven't talked about pagination yet
 
 `extend ActiveModel::Naming` doesn't seem to work in Rails 4, you still have to have `to_partial_path`.
 
@@ -88,7 +101,9 @@ Not sure why we have a Timeline object, we could have just had it in Dashboard.t
 * Model#reindex to reindex solr objects
 * ActiveRecord doesn't support Views
 
-Question: When would be the best times to commit our changes to the codebase?
-Question: Is the problem of searching both content_types is because of using [content_id, content_type] rather than [text_id, photo_id]?
+### Questions
+
+* When would be the best times to commit our changes to the codebase?
+* Is the problem of searching both content_types is because of using [content_id, content_type] rather than [text_id, photo_id]?
 
 Should discuss what class and instance methods are!
